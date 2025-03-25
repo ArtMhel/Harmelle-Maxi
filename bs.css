@@ -1,0 +1,159 @@
+/* Section des projets */
+.mes-projets {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .mes-projets h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  /* Conteneur de cartes */
+  .projets-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  /* Style de chaque carte */
+  .projet-carte {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .projet-carte:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .parapro {
+    font-size: 15px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .parapro-2end {
+    margin-top: -10px;
+  }
+  
+  .projet-carte p {
+    margin: 10px 0;
+  }
+  
+  .projet-carte .voir-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .projet-carte .voir-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section des compétences */
+  .skills-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  /* Conteneur de cartes */
+  .card-skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Style des cartes */
+  .card-skills > div {
+    flex: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .card-skills h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .skill-item {
+    margin-bottom: 15px;
+  }
+  
+  .skill-item span {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    position: relative;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #007bff;
+  }
+  
+  /* Responsivité pour petits écrans */
+  @media (max-width: 768px) {
+    .projet-carte {
+      width: 90%;
+    }
+  
+    .projects-container {
+      gap: 20px;
+    }
+  
+    .card-skills {
+      flex-direction: column;
+    }
+  
+    .card-skills > div {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
